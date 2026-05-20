@@ -137,7 +137,7 @@
 
     /* ── Main title ── */
     .pub-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 800;
       font-size: clamp(2rem, 4.5vw, 3.2rem);
       line-height: 1.15;
@@ -153,8 +153,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 6px 16px;
-      margin: 24px 0 32px;
+      gap: 6px 12px;
+      margin: 24px auto 32px;
     }
     .author-chip {
       font-size: 0.95rem;
@@ -581,11 +581,20 @@
     <div class="hero-inner">
       <div class="title-badge">
         <span class="dot"></span>
-        CVPR · SLAM · Gaussian Splatting · 2025
+        ICRA · 2026
       </div>
 
       <h1 class="pub-title">
-        <i class="fas fa-level-up-alt" style="color: var(--purple-icon); font-size: 0.85em; margin-right: 6px;"></i>
+        <!-- <i class="fas fa-level-up-alt" style="color: var(--purple-icon); font-size: 1em; margin-right: 6px;"></i> -->
+         <i class="fas fa-level-up-alt"
+   style="
+      color: var(--purple-icon);
+      font-size: 0.9em;
+      margin-right: 10px;
+      vertical-align: middle;
+      filter: drop-shadow(0 0 10px rgba(183,0,255,0.35));
+   ">
+</i>
         <span class="brand-up">UP</span><span class="brand-slam">-SLAM</span>:
         Adaptively Structured Gaussian SLAM with Uncertainty Prediction in Dynamic Environments
       </h1>
@@ -596,19 +605,24 @@
         <span class="author-chip">Jiajie He,</span>
         <span class="author-chip">Libo Zhou,</span>
         <span class="author-chip">Yan Wei,</span>
-        <span class="author-chip">Xinyi Yu<sup>*</sup></span>
+        <span class="author-chip">Xinyi Yu✉️</span>
       </div>
 
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin: -16px 0 24px; text-align: center;">
+        Zhejiang University of Technology
+      </p>
+
+
       <div class="btn-row">
-        <a href="" class="pub-btn pub-btn-primary">
-          <i class="fas fa-file-pdf"></i> Paper
+        <a href="https://arxiv.org/abs/2505.22335" class="pub-btn pub-btn-primary">
+          <i class="fa fa-file-pdf"></i> Paper
         </a>
-        <a href="https://arxiv.org/abs/2505.22335" class="pub-btn pub-btn-outline">
-          <i class="ai ai-arxiv"></i> arXiv
+        <!-- <a href="" class="pub-btn pub-btn-outline">
+          <i class="fab fa-github"></i> Code
         </a>
         <a href="" class="pub-btn pub-btn-outline">
           <i class="fa fa-database"></i> Datasets
-        </a>
+        </a> -->
       </div>
 
       <div class="hero-divider"></div>
@@ -671,7 +685,7 @@
        VISUALIZATION — MoCap carousel
   ════════════════════════════════════════ -->
   <section class="page-section">
-    <span class="section-label">Qualitative Results</span>
+    <span class="section-label">Mocap Dataset</span>
     <h2 class="section-title">Visualization of <span>Rendering Results</span></h2>
 
     <div class="carousel-wrapper fade-up">
@@ -755,7 +769,7 @@
   ════════════════════════════════════════ -->
   <section class="page-section alt-bg">
     <span class="section-label">Bonn Dataset</span>
-    <h2 class="section-title">Bonn <span>Dynamic Sequences</span></h2>
+    <h2 class="section-title">Visualization of <span>Rendering Results</span></h2>
 
     <div class="carousel-wrapper fade-up">
       <div id="results-carousel-bonn" class="carousel results-carousel">
